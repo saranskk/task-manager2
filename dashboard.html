@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient">
+  <!-- Navbar -->
+  <nav class="navbar">
+    <h2 class="logo">My Dashboard</h2>
+    <button id="logoutBtn" class="btn-small">Logout</button>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="container dashboard-container">
+    <!-- Profile Section -->
+    <div class="profile-card">
+      <h3 id="userName">User Name</h3>
+      <p id="userEmail">email@example.com</p>
+    </div>
+
+    <!-- Add Task Form -->
+    <form id="taskForm" class="task-form">
+      <input type="text" id="taskTitle" placeholder="Task Title" required>
+      <input type="text" id="taskDesc" placeholder="Task Description" required>
+      <button type="submit" class="btn">Add Task</button>
+    </form>
+
+    <!-- Search Bar -->
+    <input type="text" id="search" placeholder="Search tasks..." class="search-input">
+
+    <!-- Tasks Grid -->
+    <div id="tasksContainer" class="grid"></div>
+  </div>
+
+   <script src="script.js"></script>
+  
+</body>
+</html>
